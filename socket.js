@@ -47,6 +47,6 @@ wss.on('connection', ws => {
     });
 });
 
-server.listen(3000, '192.168.137.1', () => {
+server.listen(3000, () => {
     console.log('Server Started');
 });
