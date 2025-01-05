@@ -24,10 +24,10 @@ wss.on('connection', ws => {
                 if (targetClient.readyState === WebSocket.OPEN) {
                     targetClient.send(data);
                 } else {
-                    console.log(content[1] + " IS NOT CONNECTED");
+                    console.log(content[0] + " IS NOT CONNECTED");
                 }
             } else {
-                console.log(content[1] + " DOESNT EXIST");
+                console.log(content[0] + " DOESNT EXIST");
             } 
         }
     });
