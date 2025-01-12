@@ -13,6 +13,7 @@ const clients = new Map();
 wss.on('connection', ws => {
     ws.on('message', message => {
         const data = message.toString('utf-8');
+        console.log(data);
         var content = tools.decodeData(data);
         if (content[1] == "LOGIN") {
             ws.id = content[0];
